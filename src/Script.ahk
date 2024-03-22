@@ -7,8 +7,8 @@
  * @tips 在前两个版本的基础上对整个脚本进行了重构
  ***********************************************************************/
  
-#Include lib\Function.ahk
-#Include config\User.ini
+#Include ../lib/Function.ahk
+#Include ../config/UserInfo.ini
 
     
 ; ==============================================================================
