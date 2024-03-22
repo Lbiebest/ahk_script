@@ -6,11 +6,11 @@
  * @version 3.0.1
  * @tips 在前两个版本的基础上对整个脚本进行了重构
  ***********************************************************************/
- 
+
 #Include ../lib/Function.ahk
 #Include ../config/UserInfo.ini
 
-    
+
 ; ==============================================================================
 ; 数据存储
 ; ==============================================================================
@@ -19,7 +19,8 @@
 app := Map()
 app["wechat"] := "C:\Program Files\Tencent\WeChat\WeChat.exe"
 app["cloudmusic"] := "C:\Program Files (x86)\NetEase\CloudMusic\cloudmusic.exe"
-app["obs"] := "C:\Users\lbieb\scoop\apps\obs-studio-pre\current\bin\64bit\sudo-obs64.lnk.lnk"
+app["obs"] := "C:\Users\lbieb\scoop\apps\obs-studio-pre\current\bin\64bit\sudo-obs64.lnk"
+app["chatGPT"] := "C:\Users\lbieb\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Chrome 应用\ChatGPT.lnk"
 
 ; 应用程序工作目录
 workDir := Map()
@@ -32,7 +33,7 @@ url["github"] := "https://github.com"
 url["translategoogle"] := "https://translate.google.com/?hl=zh-CN"
 url["chatopenai"] := "https://chat.openai.com/"
 
- 
+
 ; ==============================================================================
 ; 快捷键绑定
 ; ==============================================================================
@@ -42,11 +43,9 @@ url["chatopenai"] := "https://chat.openai.com/"
 #N:: open("cloudmusic", "app")
 ; OBS Studio
 #O:: open("obs", "app", true)
-
+; OpenAI Chat
+#C:: open("chatGPT", "app")
 ; 谷歌翻译
 !F:: open("translategoogle", "web")
 ; github
 !G:: open("github", "web")
-
-
-
