@@ -18,6 +18,7 @@
 ; 应用程序路径
 app := Map()
 app["wechat"] := "C:\Program Files\Tencent\WeChat\WeChat.exe"
+app["qq"] := "C:\Program Files\Tencent\QQNT\QQ.exe"
 app["cloudmusic"] := "C:\Program Files (x86)\NetEase\CloudMusic\cloudmusic.exe"
 app["obs"] := "C:\Users\lbieb\scoop\apps\obs-studio-pre\current\bin\64bit\sudo-obs64.lnk"
 app["chatGPT"] := "C:\Users\lbieb\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Chrome 应用\ChatGPT.lnk"
@@ -38,7 +39,9 @@ url["chatopenai"] := "https://chat.openai.com/"
 ; ==============================================================================
 ; 快捷键绑定
 ; ==============================================================================
-
+; QQ
+#Q:: open("qq", "app")
+; 微信
 #W:: open("wechat", "app")
 ; 网易云音乐
 #N:: open("cloudmusic", "app")
