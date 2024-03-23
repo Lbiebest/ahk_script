@@ -21,6 +21,7 @@ app["wechat"] := "C:\Program Files\Tencent\WeChat\WeChat.exe"
 app["cloudmusic"] := "C:\Program Files (x86)\NetEase\CloudMusic\cloudmusic.exe"
 app["obs"] := "C:\Users\lbieb\scoop\apps\obs-studio-pre\current\bin\64bit\sudo-obs64.lnk"
 app["chatGPT"] := "C:\Users\lbieb\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Chrome 应用\ChatGPT.lnk"
+app["outlook"] := "C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE"
 
 ; 应用程序工作目录
 workDir := Map()
@@ -45,6 +46,8 @@ url["chatopenai"] := "https://chat.openai.com/"
 #O:: open("obs", "app", true)
 ; OpenAI Chat
 #C:: open("chatGPT", "app")
+; outlook
+#f:: open("outlook", "app")
 ; 谷歌翻译
 !F:: open("translategoogle", "web")
 ; github
